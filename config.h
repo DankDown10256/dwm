@@ -97,6 +97,7 @@ static const Key keys[] = {
   { MODKEY,                       XK_BackSpace, spawn,       {.v = lockscreen } },
   { MODKEY|ShiftMask,             XK_k,      movestack,   {.i = +1} },
   { MODKEY|ShiftMask,             XK_j,        movestack,   {.i = -1} },
+  { MODKEY|ShiftMask,             XK_s,          spawn, SHCMD("scrot -s /tmp/screenshot.png && xclip -selection clipboard -t image/png -i /tmp/screenshot.png") },
 	TAGKEYS(                        XK_ampersand,                      0)
 	TAGKEYS(                        XK_eacute,                      1)
 	TAGKEYS(                        XK_quotedbl,                      2)
