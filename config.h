@@ -10,8 +10,8 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "JetBrains Mono:size=10" };
 static const char dmenufont[]       = "JetBrains Mono Nerd Font:size=10";
 static const char col_gray1[] = "#000000";
-static const char col_gray2[] = "#222222";
-static const char col_gray3[] = "#bbbbbb";
+static const char col_gray2[] = "#111111";
+static const char col_gray3[] = "#aaaaaa";
 static const char col_gray4[] = "#ffffff";
 static const char col_cyan[]  = "#444444";
 static const char *colors[][3]      = {
