@@ -39,6 +39,7 @@ static const Rule rules[] = {
     /* class      instance    title       tags mask     isfloating   monitor */
     {"dolphin", NULL, NULL, 0, 1, -1},
     {"imv", NULL, NULL, 0, 0, -1},
+    {"Sxiv", NULL, NULL, 0, 1, -1},
 };
 
 /* layout(s) */
@@ -109,9 +110,9 @@ static const Key keys[] = {
     {MODKEY, XK_BackSpace, spawn, {.v = lockscreen}},
     {MODKEY | ShiftMask, XK_k, movestack, {.i = +1}},
     {MODKEY | ShiftMask, XK_j, movestack, {.i = -1}},
+    {MODKEY | ShiftMask, XK_w, spawn, SHCMD("sxiv -t -r ~/walls/")},
     {MODKEY | ShiftMask, XK_s, spawn,
-     SHCMD("scrot -s /tmp/screenshot.png && xclip -selection clipboard -t "
-           "image/png -i /tmp/screenshot.png")},
+     SHCMD("maim -s | xclip -selection clipboard -t image/png")},
     TAGKEYS(XK_ampersand, 0) TAGKEYS(XK_eacute, 1) TAGKEYS(XK_quotedbl, 2)
         TAGKEYS(XK_apostrophe, 3) TAGKEYS(XK_parenleft, 4) TAGKEYS(XK_minus, 5)
             TAGKEYS(XK_egrave, 6) TAGKEYS(XK_underscore, 7)
